@@ -37,3 +37,25 @@
     f. **true** - same type and value 
 
 15) "==" converts the types therefore a boolean like true will become 1, however, "===" does not convert the types and it checks if value and type is the same. 
+
+16) see part2-question16.js
+    
+17) This will return the array [2, 4, 6]. Initially the function modifyArray is called. Here a new array which will be returned is created. Then there is a loop which will go through each element of array, since it loops through the length of the array. 
+Loop 1: 
+i = 0, array[i] = 1, and callBack which is the function doSomething is called. So 1 is paramater of doSomething which returns 1*2 = 2. Back to the loop, the newArr adds 2, so newArr at the end of the loop = [2]
+
+Loop 2: 
+i = 1, array[i] = 2, and callBack which is the function doSomething is called. So 2 is paramater of doSomething which returns 2*2 = 4. Back to the loop, the newArr adds 4, so newArr at the end of the loop = [2, 4]
+
+Loop 3: 
+i = 2, array[i] = 3, and callBack which is the function doSomething is called. So 3 is paramater of doSomething which returns 3*2 = 6. Back to the loop, the newArr adds 6, so newArr at the end of the loop = [2, 4, 6]
+
+18) see part2-question18.js
+19) It will print 
+" 1
+  4
+  3
+  2
+"
+
+This is because the events without a setTimeout will go first as the setTimeout events are added o a queue. Then it will be event 3, since 2 will print 1 second after being called, and in the meantime 3 will have ran.
